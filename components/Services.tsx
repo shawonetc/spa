@@ -8,31 +8,49 @@ import { SPA_INFO } from "@/constants/spaInfo";
 export default function Services() {
   const services = [
     {
-      id: "hot-oil",
-      title: "Hot Oil Full Body Massage",
-      description: "গরম তেলে আরামদায়ক ফুল বডি ম্যাসাজ — গভীর রিলাক্সেশন ও পেশীর ব্যথা উপশমে অত্যন্ত কার্যকর।",
-      duration: "৬০ মিনিট / ৯০ মিনিট",
-      price: "৳৬,০০০ / ৳৮,৫০০",
-      image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&q=80&w=800",
-      popular: true,
+      id: "service-1",
+      title: "Spa Service 1",
+      image: "/services/WhatsApp Image 2026-08-19 at 9.37.01 AM.jpeg",
     },
     {
-      id: "aroma-therapy",
-      title: "Aroma Therapy Massage",
-      description: "বিশেষ এসেনশিয়াল অয়েলের মনমুগ্ধকর সুগন্ধে মন শান্ত করার ও শরীরের ক্লান্তি দূর করার প্রিমিয়াম থেরাপি।",
-      duration: "৬০ মিনিট",
-      price: "৳৫,৫০০",
-      image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&q=80&w=800",
-      popular: false,
+      id: "service-2",
+      title: "Spa Service 2",
+      image: "/services/WhatsApp Image 2026-08-19 at 9.37.01 AM (1).jpeg",
     },
     {
-      id: "head-neck-shoulder",
-      title: "Head, Neck & Shoulder Massage",
-      description: "মাথাব্যথা, ঘাড়, কাঁধ ও পিঠের অবশ ভাব এবং স্ট্রেস কমানোর জন্য টার্গেটেড রিফ্রেশিং থেরাপি।",
-      duration: "৩০ মিনিট",
-      price: "৳৩,০০০",
-      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800",
-      popular: false,
+      id: "service-3",
+      title: "Spa Service 3",
+      image: "/services/WhatsApp Image 2026-08-19 at 9.37.01 AM (2).jpeg",
+    },
+    {
+      id: "service-4",
+      title: "Spa Service 4",
+      image: "/services/WhatsApp Image 2026-08-19 at 9.37.02 AM.jpeg",
+    },
+    {
+      id: "service-5",
+      title: "Spa Service 5",
+      image: "/services/WhatsApp Image 2026-08-19 at 9.37.02 AM (1).jpeg",
+    },
+    {
+      id: "service-6",
+      title: "Spa Service 6",
+      image: "/services/WhatsApp Image 2026-08-19 at 9.37.03 AM.jpeg",
+    },
+    {
+      id: "service-7",
+      title: "Spa Service 7",
+      image: "/services/WhatsApp Image 2026-08-19 at 9.37.03 AM (1).jpeg",
+    },
+    {
+      id: "service-8",
+      title: "Spa Service 8",
+      image: "/services/WhatsApp Image 2026-08-19 at 9.37.03 AM (2).jpeg",
+    },
+    {
+      id: "service-9",
+      title: "Spa Service 9",
+      image: "/services/WhatsApp Image 2026-08-19 at 9.37.04 AM.jpeg",
     },
   ];
 
@@ -54,67 +72,31 @@ export default function Services() {
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div 
-              key={service.id} 
-              className="group relative flex flex-col justify-between rounded-2xl overflow-hidden glass-card h-full"
+            <div
+              key={service.id}
+              className="group relative flex flex-col justify-between rounded-2xl overflow-hidden glass-card h-full border border-[#e7e4db]"
             >
-              {/* Popular Ribbon */}
-              {service.popular && (
-                <div className="absolute top-5 right-5 z-20 inline-flex items-center gap-1.5 bg-[#1e3325] text-white text-[11px] uppercase font-bold tracking-wider px-3.5 py-1.5 rounded-full shadow-lg border border-white/10">
-                  <Flame className="w-3.5 h-3.5 fill-white animate-pulse" />
-                  Popular
-                </div>
-              )}
-
-              {/* Service Details */}
-              <div>
-                {/* Image Container */}
-                <div className="relative h-56 w-full overflow-hidden">
-                  <Image 
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                  />
-                </div>
-
-                {/* Body Content */}
-                <div className="p-6">
-                  <h3 className="text-xl font-serif font-bold text-[#1c2b20] group-hover:text-[#bca261] transition-colors mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-[#334639] font-normal text-[15px] leading-relaxed mb-6">
-                    {service.description}
-                  </p>
-                </div>
+              {/* Image Container */}
+              <div className="relative w-full overflow-hidden bg-white">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform duration-500 ease-out"
+                />
               </div>
 
-              {/* Pricing & Booking Footer */}
-              <div className="p-6 pt-0 border-t border-[#e7e4db]/60 mt-auto bg-[#fdfcfb]">
-                <div className="flex flex-col gap-2 py-4">
-                  <div className="flex justify-between items-center text-xs text-[#5a6e60]">
-                    <span className="flex items-center gap-1">
-                      <Clock className="w-3.5 h-3.5 text-[#bca261]" />
-                      সময়কাল:
-                    </span>
-                    <span className="font-medium text-[#334639]">{service.duration}</span>
-                  </div>
-                  <div className="flex justify-between items-center text-sm border-t border-[#e7e4db]/40 pt-3 mt-1">
-                    <span className="text-[#5a6e60] text-xs">মূল্য:</span>
-                    <span className="font-extrabold text-[#1e3325] text-2xl tracking-tight">{service.price}</span>
-                  </div>
-                </div>
-
+              {/* Booking Footer */}
+              <div className="p-5 bg-[#fdfcfb] border-t border-[#e7e4db]/60">
                 {/* Quick CTAs */}
-                <div className="grid grid-cols-2 gap-3 pt-2">
-                  <a 
+                <div className="grid grid-cols-2 gap-3">
+                  <a
                     href={`tel:${SPA_INFO.formattedPhone}`}
                     className="flex items-center justify-center gap-1.5 py-3 rounded-lg border border-[#1e3325]/20 text-[#1e3325] hover:bg-[#1e3325]/5 text-xs font-semibold transition-colors text-center"
                   >
                     <Phone className="w-3.5 h-3.5" />
                     কল করুন
                   </a>
-                  <a 
+                  <a
                     href={SPA_INFO.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
