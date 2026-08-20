@@ -10,47 +10,47 @@ export default function Services() {
     {
       id: "service-1",
       title: "Spa Service 1",
-      image: "/services/WhatsApp Image 2026-08-19 at 9.37.01 AM.jpeg",
+      image: "/servicess/1.png",
     },
     {
       id: "service-2",
       title: "Spa Service 2",
-      image: "/services/WhatsApp Image 2026-08-19 at 9.37.01 AM (1).jpeg",
+      image: "/servicess/2.png",
     },
     {
       id: "service-3",
       title: "Spa Service 3",
-      image: "/services/WhatsApp Image 2026-08-19 at 9.37.01 AM (2).jpeg",
+      image: "/servicess/3.png",
     },
     {
       id: "service-4",
       title: "Spa Service 4",
-      image: "/services/WhatsApp Image 2026-08-19 at 9.37.02 AM.jpeg",
+      image: "/servicess/4.png",
     },
     {
       id: "service-5",
       title: "Spa Service 5",
-      image: "/services/WhatsApp Image 2026-08-19 at 9.37.02 AM (1).jpeg",
+      image: "/servicess/5.png",
     },
     {
       id: "service-6",
       title: "Spa Service 6",
-      image: "/services/WhatsApp Image 2026-08-19 at 9.37.03 AM.jpeg",
+      image: "/servicess/6.png",
     },
     {
       id: "service-7",
       title: "Spa Service 7",
-      image: "/services/WhatsApp Image 2026-08-19 at 9.37.03 AM (1).jpeg",
+      image: "/servicess/7.png",
     },
     {
       id: "service-8",
       title: "Spa Service 8",
-      image: "/services/WhatsApp Image 2026-08-19 at 9.37.03 AM (2).jpeg",
+      image: "/servicess/8.png",
     },
     {
       id: "service-9",
       title: "Spa Service 9",
-      image: "/services/WhatsApp Image 2026-08-19 at 9.37.04 AM.jpeg",
+      image: "/servicess/9.png",
     },
   ];
 

@@ -10,8 +10,8 @@ export default function Hero() {
     <section className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center pt-24 overflow-hidden">
       {/* Background Image with elegant overlay */}
       <div className="absolute inset-0 z-0">
-        <Image 
-          src="/bg.png"
+        <Image
+          src="/bg2.png"
           alt="Eden Garden Day Spa Luxury Atmosphere"
           fill
           priority
@@ -42,14 +42,14 @@ export default function Hero() {
 
           {/* Hero CTAs */}
           <div className="flex flex-wrap items-center gap-4">
-            <a 
+            <a
               href={`tel:${SPA_INFO.formattedPhone}`}
               className="px-6 py-3.5 rounded-full bg-[#bca261] text-[#1c2b20] hover:bg-[#c5a059] font-bold transition-all duration-300 text-sm flex items-center justify-center gap-2"
             >
               <PhoneCall className="w-4 h-4" />
               কল করুন: {SPA_INFO.phoneNumber}
             </a>
-            <a 
+            <a
               href={SPA_INFO.fbUrl}
               target="_blank"
               rel="noopener noreferrer"
